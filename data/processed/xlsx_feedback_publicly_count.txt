@@ -1,0 +1,4 @@
+XLSX Word Count Result
+Word: publicly
+Column: C
+Count: 16

@@ -213,3 +213,6 @@ Press `Ctrl c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+## Custom
+Changed word to be counted from GitHub to publicly in etvl.xlsx.py and in app.py

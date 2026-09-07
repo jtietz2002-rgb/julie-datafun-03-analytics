@@ -1,7 +1,7 @@
 """src/datafun/app.py - Project script.
 
-Author: Julie Tietz
-Date: 2026-09-07
+Author: Denise Case
+Date: 2026-08-23
 
 HOW TO RUN THIS FILE:
 
@@ -130,11 +130,11 @@ and write the count to a text file.
 """
 
 XLSX_INPUT: Final[Path] = RAW_DIR / "Feedback.xlsx"
-XLSX_OUTPUT: Final[Path] = PROCESSED_DIR / "xlsx_feedback_publicly_count.txt"
-XLSX_COLUMN: Final[str] = "C"  # CUSTOM
-XLSX_WORD: Final[str] = "publicly"  # CUSTOM
+XLSX_OUTPUT: Final[Path] = PROCESSED_DIR / "xlsx_feedback_github_count.txt"
+XLSX_COLUMN: Final[str] = "A"  # CUSTOM
+XLSX_WORD: Final[str] = "GitHub"  # CUSTOM
 WHY_XLSX_WORD: Final[str] = r"""
-Feedback mentions "publicly" when students discuss repository issues,
+Feedback mentions GitHub when students hit repository issues,
 so counting the word estimates how often that came up.
 """
 

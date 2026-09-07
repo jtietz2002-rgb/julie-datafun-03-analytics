@@ -40,7 +40,7 @@ from openpyxl.cell.cell import Cell
 
 # openpyxl.load_workbook() opens an Excel file and returns a Workbook object.
 # workbook.active returns the first (active) worksheet.
-# sheet["C"] returns all cells in column C as a tuple.
+# sheet["A"] returns all cells in column A as a tuple.
 # Each cell has a .value attribute containing the cell's contents.
 # Cell values can be str, int, float, None, or other types.
 # Use isinstance() to check the type before using the value.
@@ -175,8 +175,8 @@ def load_count_report(
 #
 #   XLSX_INPUT  = data/raw/Feedback.xlsx
 #   XLSX_OUTPUT = data/processed/xlsx_feedback_github_count.txt
-#   XLSX_COLUMN = C
-#   XLSX_WORD   = publicly
+#   XLSX_COLUMN = A
+#   XLSX_WORD   = GitHub
 #
 # app.py calls this function and passes those values in:
 #
