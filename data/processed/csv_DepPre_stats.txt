@@ -1,0 +1,6 @@
+Statistics for column: DepPre
+Count: 27
+Minimum: 0.00
+Maximum: 38.00
+Mean: 12.93
+Standard Deviation: 10.98

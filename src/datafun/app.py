@@ -85,7 +85,7 @@ PROCESSED_DIR: Final[Path] = Path("data") / "processed"
 # === CSV: SUMMARIZE A NUMERIC COLUMN ===
 
 CSV_PIPELINE_DESCRIPTION: Final[str] = r"""
-Read the capstone survey CSV file,
+Read the capstone survey csv file,
 extract the selected numeric column,
 calculate descriptive statistics,
 verify the results,
