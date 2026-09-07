@@ -19,21 +19,21 @@ This project illustrates how the workflow is similar
 even when the data is very different.
 It uses four datasets, each in a different file format.
 
-- CSV:  world happiness scores
+- CSV:  capstone survey data with numeric scores
 - JSON: astronauts currently in space, by spacecraft
 - XLSX: student feedback text
 - TXT:  a plain-text version of Romeo and Juliet
 
 Paths (relative to repo root):
 
-INPUT FILE:  data/raw/2020_happiness.csv
+INPUT FILE:  data/raw/capstone_2025_data.csv
 INPUT FILE:  data/raw/astros.json
 INPUT FILE:  data/raw/Feedback.xlsx
 INPUT FILE:  data/raw/romeo_and_juliet.txt
 
-OUTPUT FILE: data/processed/csv_ladder_score_stats.txt
+OUTPUT FILE: data/processed/csv_DepPre_stats.txt
 OUTPUT FILE: data/processed/json_astronauts_by_craft.txt
-OUTPUT FILE: data/processed/xlsx_feedback_github_count.txt
+OUTPUT FILE: data/processed/xlsx_feedback_publicly_count.txt
 OUTPUT FILE: data/processed/txt_summary.txt
 
 EXPLORE:
@@ -85,18 +85,18 @@ PROCESSED_DIR: Final[Path] = Path("data") / "processed"
 # === CSV: SUMMARIZE A NUMERIC COLUMN ===
 
 CSV_PIPELINE_DESCRIPTION: Final[str] = r"""
-Read the world happiness CSV file,
+Read the capstone survey CSV file,
 extract the selected numeric column,
 calculate descriptive statistics,
 verify the results,
 and write the statistics to a text file.
 """
 
-CSV_INPUT: Final[Path] = RAW_DIR / "2020_happiness.csv"
-CSV_OUTPUT: Final[Path] = PROCESSED_DIR / "csv_ladder_score_stats.txt"
-CSV_COLUMN: Final[str] = "Ladder score"  # CUSTOM
+CSV_INPUT: Final[Path] = RAW_DIR / "capstone_2025_data.csv"
+CSV_OUTPUT: Final[Path] = PROCESSED_DIR / "csv_DepPre_stats.txt"
+CSV_COLUMN: Final[str] = "DepPre"  # CUSTOM
 WHY_CSV_COLUMN: Final[str] = r"""
-The ladder score is the survey's overall happiness measure,
+The DepPre column contains a dependent variable for the analysis,
 so its distribution is the natural first summary of this dataset.
 """
 

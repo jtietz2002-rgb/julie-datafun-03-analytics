@@ -1,7 +1,10 @@
 """etvl_csv.py - CSV ETVL pipeline.
 
-Author: Denise Case
-Date: 2026-08-23
+Author: Julie Tietz
+Date: 2026-09-07
+This module implements the CSV ETVL pipeline.
+The main function is run_etvl_csv(), which is called from app.py.
+Customized to call pipeline function for capstone project.
 
 Practice key Python skills related to:
     - ETVL pipeline structure (Extract, Transform, Verify, Load)
@@ -70,10 +73,10 @@ from datafun.utils_etvl import (
 
 # The main app.py file declares the data-specific choices:
 #
-#   CSV_INPUT   = data/raw/2020_happiness.csv
-#   CSV_OUTPUT  = data/processed/csv_ladder_score_stats.txt
-#   CSV_COLUMN  = Ladder score
-#   CSV_GRAIN   = one country
+#   CSV_INPUT   = data/raw/capstone_2025_data.csv
+#   CSV_OUTPUT  = data/processed/csv_DepPre_stats.txt
+#   CSV_COLUMN  = DepPre  # CUSTOM
+#   CSV_GRAIN   = one score per student  # CUSTOM
 #
 # app.py calls this function and passes those values in:
 #
