@@ -933,3 +933,94 @@ of a plain-text document before any deeper reading.
 2026-09-09 14:11:23 | INFO | P03 | ===================================
 2026-09-09 14:11:23 | INFO | P03 | END main() - Executed successfully!
 2026-09-09 14:11:23 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | === RUN START ===
+2026-09-09 15:46:18 | INFO | P03 | project=P03
+2026-09-09 15:46:18 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-09 15:46:18 | INFO | P03 | python=3.14.7
+2026-09-09 15:46:18 | INFO | P03 | os=Linux 7.0.0-31-generic
+2026-09-09 15:46:18 | INFO | P03 | shell=bash
+2026-09-09 15:46:18 | INFO | P03 | cwd=.
+2026-09-09 15:46:18 | INFO | P03 | github_actions=False
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | START main()
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | raw folder = data/raw
+2026-09-09 15:46:18 | INFO | P03 | processed folder = data/processed
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | CSV pipeline
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | Pipeline: 
+Read the capstone survey csv file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-09 15:46:18 | INFO | P03 | Column: DepPre
+2026-09-09 15:46:18 | INFO | P03 | Why: 
+The DepPre column contains a dependent variable for the analysis,
+so its distribution is the natural first summary of this dataset.
+
+2026-09-09 15:46:18 | INFO | P03 | CSV: START
+2026-09-09 15:46:18 | INFO | P03 | Extracted 27 rows from capstone_2025_data.csv
+2026-09-09 15:46:18 | INFO | P03 | Converted 27 values, skipped 0, from 'DepPre'
+2026-09-09 15:46:18 | INFO | P03 | Calculated statistics: {'count': 27.0, 'min': 0.0, 'max': 38.0, 'mean': 12.925925925925926, 'stdev': 10.975237603616627}
+2026-09-09 15:46:18 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-09 15:46:18 | INFO | P03 | Wrote report to csv_DepPre_stats.txt
+2026-09-09 15:46:18 | INFO | P03 | CSV: wrote data/processed/csv_DepPre_stats.txt
+2026-09-09 15:46:18 | INFO | P03 | CSV: END
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | JSON pipeline
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-09 15:46:18 | INFO | P03 | Grouping: people by craft
+2026-09-09 15:46:18 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-09 15:46:18 | INFO | P03 | JSON: START
+2026-09-09 15:46:18 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-09 15:46:18 | INFO | P03 | JSON: END
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | XLSX pipeline
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-09 15:46:18 | INFO | P03 | Word: publicly in column C
+2026-09-09 15:46:18 | INFO | P03 | Why: 
+Feedback mentions "publicly" when students discuss repository issues,
+so counting the word estimates how often that came up.
+
+2026-09-09 15:46:18 | INFO | P03 | XLSX: START
+2026-09-09 15:46:18 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_publicly_count.txt
+2026-09-09 15:46:18 | INFO | P03 | XLSX: END
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | TEXT pipeline
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-09 15:46:18 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-09 15:46:18 | INFO | P03 | TXT: START
+2026-09-09 15:46:18 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-09 15:46:18 | INFO | P03 | TXT: END
+2026-09-09 15:46:18 | INFO | P03 | ===================================
+2026-09-09 15:46:18 | INFO | P03 | END main() - Executed successfully!
+2026-09-09 15:46:18 | INFO | P03 | ===================================
