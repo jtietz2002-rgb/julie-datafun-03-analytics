@@ -48,8 +48,6 @@ show_signature_annotations = true # WHY: Displaying type annotations in function
 separate_signature = true # WHY: Separating the signature from the description enhances readability and comprehension of the documentation.
 show_submodules = true # WHY: Including submodules in the documentation provides a complete view of the codebase and its structure.
 
-[project.plugins.search]
-lang = "en" # WHY: Search plugin provides instant search functionality for documentation.
 
 [project.theme]
 # SEE: https://zensical.org/docs/setup/navigation/#instant-navigation-zensicaltoml
